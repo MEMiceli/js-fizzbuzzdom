@@ -24,15 +24,18 @@ for(let i = 1; i <= 100; i++) {
     if(  i % 3 === 0 && i % 5 === 0){
         console.log("FizzBuzz");
         item.innerText = "FizzBuzz";
+        item.classList.add("FizzBuzz")
     
 // per i numeri multipli di 3 stampa fizz
     } else if ( i % 3 === 0 ){
         console.log("fizz");
         item.innerText = "Fizz";
+        item.classList.add("Fizz")
 // per i numeri multipli di 5 stampa buzz
     } else if  (i % 5 === 0 ){
         console.log("buzz");
         item.innerText = "Buzz";
+        item.classList.add("Buzz");
         
 // per gli altri numeri stampa solo il numero
     } else {

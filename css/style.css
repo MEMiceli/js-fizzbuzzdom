@@ -22,3 +22,12 @@
     border: 5px solid white;
     background-color: aquamarine;
 }
+.FizzBuzz{
+    background-color: blueviolet;
+}
+.Buzz{
+    background-color: rgb(47, 159, 77);
+}
+.Fizz{
+    background-color: blanchedalmond;
+}
