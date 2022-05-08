@@ -13,23 +13,35 @@
 // 2. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 // Buon lavoro e buon divertimento! :faccia_leggermente_sorridente:
 
+ const list = document.querySelector(".list")
 
-
-for(let i = 1; i <= 100; i++){
+//crea i numeri da 1 a 100
+for(let i = 1; i <= 100; i++) {
+    const item = document.createElement("li"); // creato elemento <li></li>
+    item.classList.add("item") // aggiunta classe .item ad elemento li
+    // diamo un contenuto ad elemento li
+    // per i numeri multipli di 3 e di 5 stampa fizzbuzz
     if(  i % 3 === 0 && i % 5 === 0){
-        console.log(i)
-    }
-
-    else if ( i % 3 === 0 ){
-        console.log("fizz");
-
-    } else if  (i % 5 === 0 );
-        console.log("buzz")
-    else {
-        console.log(i);
-    }
+        console.log("FizzBuzz");
+        item.innerText = "FizzBuzz";
     
+// per i numeri multipli di 3 stampa fizz
+    } else if ( i % 3 === 0 ){
+        console.log("fizz");
+        item.innerText = "Fizz";
+// per i numeri multipli di 5 stampa buzz
+    } else if  (i % 5 === 0 ){
+        console.log("buzz");
+        item.innerText = "Buzz";
+        
+// per gli altri numeri stampa solo il numero
+    } else {
+       console.log(i);
+       item.innerText = i;
+    } 
+    // aggiungo elementi con append per non sovrascriverli
+    list.append(item)
 }
 
-oggetto.innerhtml += "<div class='item></div>'"
-    if
+// oggetto.innerhtml += "<div class='item></div>'"
+//     if
